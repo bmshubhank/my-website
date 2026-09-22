@@ -11,11 +11,11 @@ export const personalInfo: PersonalInfo = {
     "Through rigorous coursework in Data Structures & Algorithms, Operating Systems, Computer Networks, and DBMS, I focus on writing performant, maintainable, and type-safe code.",
     "I actively turn theoretical computing principles into practical software—such as developing WeatherGPT for the Smart India Hackathon (SIH), creating an intelligent conversational interface over real-time climate data streams."
   ],
-  location: "[Your City, Country]",
-  email: "your.email@example.com",
-  github: "https://github.com/your-username",
-  linkedin: "https://linkedin.com/in/your-profile",
-  leetcode: "https://leetcode.com/your-handle",
+  location: "Bengaluru, Karnataka, India",
+  email: "bmshubhank8210@gmail.com",
+  github: "https://github.com/bmshubhank",
+  linkedin: "https://www.linkedin.com/in/b-m-shubhank",
+  leetcode: "https://leetcode.com/u/Shubhank_20",
   resumeUrl: "#" // Replace with direct PDF link or public resume URL
 };
 
