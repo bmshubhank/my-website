@@ -22,6 +22,14 @@ export const Contact: React.FC = () => {
   const handleFormSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!formData.name || !formData.email || !formData.message) return;
+
+    // Construct email subject and body
+    const subject = encodeURIComponent(formData.subject || `Portfolio Contact from ${formData.name}`);
+    const body = encodeURIComponent(`Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`);
+
+    // Open user's default email client
+    window.location.href = `mailto:${personalInfo.email}?subject=${subject}&body=${body}`;
+
     setFormSubmitted(true);
     // Reset after 4 seconds
     setTimeout(() => {
