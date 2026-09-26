@@ -9,6 +9,8 @@ import { Education } from './components/sections/Education';
 import { Certifications } from './components/sections/Certifications';
 import { Contact } from './components/sections/Contact';
 
+import { ScrollAnimation } from './components/ui/ScrollAnimation';
+
 export function App() {
   return (
     <div className="portfolio-app" style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
@@ -17,14 +19,30 @@ export function App() {
 
       {/* Main Content Area */}
       <main style={{ flex: 1 }}>
-        <Hero />
-        <About />
-        <Skills />
-        <Projects />
-        <Achievements />
-        <Education />
-        <Certifications />
-        <Contact />
+        <ScrollAnimation direction="none">
+          <Hero />
+        </ScrollAnimation>
+        <ScrollAnimation delay={0.1}>
+          <About />
+        </ScrollAnimation>
+        <ScrollAnimation delay={0.1}>
+          <Skills />
+        </ScrollAnimation>
+        <ScrollAnimation delay={0.1}>
+          <Projects />
+        </ScrollAnimation>
+        <ScrollAnimation delay={0.1}>
+          <Achievements />
+        </ScrollAnimation>
+        <ScrollAnimation delay={0.1}>
+          <Education />
+        </ScrollAnimation>
+        <ScrollAnimation delay={0.1}>
+          <Certifications />
+        </ScrollAnimation>
+        <ScrollAnimation delay={0.1}>
+          <Contact />
+        </ScrollAnimation>
       </main>
 
       {/* Footer */}
