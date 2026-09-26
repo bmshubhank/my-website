@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react';
+import React, { type ReactNode } from 'react';
 import { motion } from 'framer-motion';
 
 interface ScrollAnimationProps {
@@ -8,9 +8,9 @@ interface ScrollAnimationProps {
   className?: string;
 }
 
-export const ScrollAnimation: React.FC<ScrollAnimationProps> = ({ 
-  children, 
-  delay = 0, 
+export const ScrollAnimation: React.FC<ScrollAnimationProps> = ({
+  children,
+  delay = 0,
   direction = 'up',
   className = ''
 }) => {
@@ -27,10 +27,10 @@ export const ScrollAnimation: React.FC<ScrollAnimationProps> = ({
       initial={{ opacity: 0, ...directions[direction] }}
       whileInView={{ opacity: 1, x: 0, y: 0 }}
       viewport={{ once: true, margin: "-100px" }}
-      transition={{ 
-        duration: 0.7, 
-        delay, 
-        ease: [0.25, 0.25, 0, 1] 
+      transition={{
+        duration: 0.7,
+        delay,
+        ease: [0.25, 0.25, 0, 1]
       }}
       className={className}
     >
