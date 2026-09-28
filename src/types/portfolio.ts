@@ -11,6 +11,7 @@ export interface Project {
   architecture?: string[];
   demoUrl?: string;
   githubUrl?: string;
+  logoUrl?: string;
 }
 
 export interface SkillCategory {

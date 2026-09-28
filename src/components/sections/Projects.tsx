@@ -507,10 +507,19 @@ export const Projects: React.FC = () => {
                         display: 'flex',
                         alignItems: 'center',
                         justifyContent: 'center',
-                        color: 'var(--accent-cyan)'
+                        color: 'var(--accent-cyan)',
+                        overflow: 'hidden'
                       }}
                     >
-                      <FolderGit2 size={20} />
+                      {project.logoUrl ? (
+                        <img 
+                          src={project.logoUrl} 
+                          alt={`${project.title} logo`} 
+                          style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
+                        />
+                      ) : (
+                        <FolderGit2 size={20} />
+                      )}
                     </div>
 
                     <div style={{ display: 'flex', gap: '0.75rem' }}>

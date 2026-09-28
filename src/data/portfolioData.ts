@@ -87,6 +87,23 @@ export const projects: Project[] = [
     ],
     demoUrl: "https://your-project3-demo.example.com",
     githubUrl: "https://github.com/your-username/project-3"
+  },
+  {
+    id: "taskflow",
+    title: "TaskFlow",
+    tagline: "Professional Task Management / To-Do List Web Application",
+    description: "TaskFlow is a professional and responsive task management application that helps users organize daily activities, track progress, and manage completed tasks efficiently.",
+    featured: false,
+    tags: ["React", "JavaScript", "Vite", "CSS", "LocalStorage"],
+    highlights: [
+      "Add, delete, and mark tasks as completed",
+      "Filter tasks by All, Active, and Completed",
+      "Dashboard task statistics and completion progress percentage",
+      "Persistent task storage using LocalStorage and responsive design"
+    ],
+    demoUrl: "https://task-flow-roan-three.vercel.app/",
+    githubUrl: "https://github.com/bmshubhank/TaskFlow",
+    logoUrl: "/assets/taskflow-logo.png"
   }
 ];
 
